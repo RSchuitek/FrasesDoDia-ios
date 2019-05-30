@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Frases_do_dia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="H3N-EL-ua5">
+                                <rect key="frame" x="10" y="54" width="394" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="yfe-Fj-2DP"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ug-qk-ocM">
+                                <rect key="frame" x="132" y="192" width="150" height="60"/>
+                                <color key="backgroundColor" red="0.32815411686897278" green="0.52697986364364624" blue="0.097008533775806427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="7wm-Se-se1"/>
+                                    <constraint firstAttribute="height" constant="60" id="dYo-1b-fPI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Nova Frase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="novaFraseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bI3-PB-CVM"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-esquerda" translatesAutoresizingMaskIntoConstraints="NO" id="XQ5-bg-dVo">
+                                <rect key="frame" x="20" y="262" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ufA-FB-iDk"/>
+                                    <constraint firstAttribute="height" constant="60" id="zdf-64-tZS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmg-um-n2Z">
+                                <rect key="frame" x="20" y="342" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="SDe-KC-oeL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aspas-direita" translatesAutoresizingMaskIntoConstraints="NO" id="S4i-BI-bkN">
+                                <rect key="frame" x="334" y="452" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="5h3-Pk-ikc"/>
+                                    <constraint firstAttribute="height" constant="60" id="ccf-9I-KS8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S4i-BI-bkN" secondAttribute="trailing" constant="20" id="4DN-WS-Jrg"/>
+                            <constraint firstItem="zmg-um-n2Z" firstAttribute="top" secondItem="XQ5-bg-dVo" secondAttribute="bottom" constant="20" id="6c8-gb-Z78"/>
+                            <constraint firstItem="XQ5-bg-dVo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="C5x-fJ-hMg"/>
+                            <constraint firstItem="H3N-EL-ua5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Df6-OB-YxL"/>
+                            <constraint firstItem="8Ug-qk-ocM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eu3-wX-mYy"/>
+                            <constraint firstItem="zmg-um-n2Z" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="SP3-6p-9eo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zmg-um-n2Z" secondAttribute="trailing" constant="20" id="Ucf-94-PlD"/>
+                            <constraint firstItem="S4i-BI-bkN" firstAttribute="top" secondItem="zmg-um-n2Z" secondAttribute="bottom" constant="10" id="kxG-AA-vl3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H3N-EL-ua5" secondAttribute="trailing" constant="10" id="nIc-BV-8RJ"/>
+                            <constraint firstItem="XQ5-bg-dVo" firstAttribute="top" secondItem="H3N-EL-ua5" secondAttribute="bottom" constant="80" id="oZL-PB-i3J"/>
+                            <constraint firstItem="H3N-EL-ua5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="ux5-3U-D6U"/>
+                            <constraint firstItem="8Ug-qk-ocM" firstAttribute="top" secondItem="H3N-EL-ua5" secondAttribute="bottom" constant="10" id="xCz-v8-Mzi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="legendaResultadoLabel" destination="zmg-um-n2Z" id="RoW-iX-pd5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.333333333333336" y="-67.633928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspas-direita" width="56" height="55"/>
+        <image name="aspas-esquerda" width="57" height="54"/>
+        <image name="logo" width="253" height="140"/>
+    </resources>
+</document>
